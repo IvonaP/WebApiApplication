@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  parkingandsickleaveapp:
+    image: ${DOCKER_REGISTRY-}parkingandsickleaveapp
+    build:
+      context: .
+      dockerfile: ParkingAndSickLeaveApp/Dockerfile
